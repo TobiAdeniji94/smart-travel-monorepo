@@ -1,0 +1,10 @@
+# Node
+node_modules/
+npm-debug.log
+
+# Python
+packages/ml/venv/
+packages/ml/__pycache__/
+
+# Docker
+**/volumes/

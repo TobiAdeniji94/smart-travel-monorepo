@@ -1,0 +1,19 @@
+{
+  "name": "smart-travel-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm --workspace=apps/web dev",
+    "dev:api": "npm --workspace=apps/api dev",
+    "dev:ml": "docker-compose up ml-service",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "test": "echo \"No tests yet\""
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^2.0.0"
+  }
+}
